@@ -1,0 +1,158 @@
+/* Reset أساسي */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f4f9ff;
+  color: #333;
+}
+
+/* رأس الصفحة */
+header {
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffd60a;
+}
+
+/* أقسام الرحلات */
+section {
+  padding: 40px 20px;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0077b6;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+/* تصميم الرحلات */
+.tour {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.tour img {
+  width: 30%;
+  margin: 10px;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+
+.tour img:hover {
+  transform: scale(1.05);
+}
+
+.tour h3 {
+  margin: 20px 0 10px;
+  color: #023e8a;
+}
+
+.tour p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* الأزرار */
+button {
+  background: #0077b6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0096c7;
+}
+
+/* الجاليري */
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.gallery img {
+  width: 30%;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* التواصل */
+#contact {
+  text-align: center;
+  background: #caf0f8;
+  padding: 40px 20px;
+  border-radius: 30px;
+  margin: 20px;
+}
+
+#contact h2 {
+  color: #03045e;
+}
+
+#contact a {
+  color: #0077b6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* فيديوهات وصوت */
+video, audio {
+  margin: 15px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
