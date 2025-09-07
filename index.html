@@ -1,133 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دليلك المحلي في الغردقة</title>
 
-  <meta name="description" content="Book tours in Hurghada: Glass Boat, Snorkeling, Orange Bay, and more with your local guide.">
+  <meta name="description" content="احجز جولاتك في الغردقة: قوارب زجاجية، غوص، جزيرة أورانج باي، رحلات سفاري، والمزيد مع مرشدك المحلي.">
+  <meta name="keywords" content="جولات الغردقة, رحلات بحرية, قارب زجاجي, سفاري, الغوص, الغردقة, سياحة الغردقة">
+  <meta property="og:title" content="دليلك المحلي في الغردقة - حجز أفضل الرحلات">
+  <meta property="og:description" content="أفضل الجولات في الغردقة: القارب الزجاجي، الغوص، جزيرة أورانج باي، رحلات السفاري.">
+  <meta property="og:image" content="images/hero.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.yourwebsite.com"> <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 
-  
-  <meta property="og:title" content="Get Your Hurghada Guide">
-<meta property="og:description" content="Top tours in Hurghada: Glass Boat, Snorkeling, Orange Bay.">
-<meta property="og:image" content="images/corals/corals.jpg">
-<meta property="og:type" content="website">
-
-  
-  <title>Get Your Hurghada Guide</title>
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-<link rel="icon" href="images/favicon.png" type="image/png">
-
-  
+  <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 <body>
 
-  <!-- رأس الصفحة -->
-  <header>
-    <h1>Get Your <br>Hurghada Local Guide</h1>
-    <nav>
-      <ul>
-        <li><a href="#tours">Tours</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="main-header">
+    <div class="header-content">
+      <div class="logo">
+        <a href="#home">دليلك في الغردقة</a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#tours">الجولات</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- قسم الرحلات -->
-  <section id="tours">
-    <h2>Top Tours</h2>
-
-    <div class="tour">
-      <h3>Glass Boat</h3>
-      <div class="images">
-        <img src="images/glass%20boat/images%20(1).jpg" alt="Glass Boat 1">
-
-        <img src="images/glass boat/images (2).jpg" alt="Glass Boat 2">
-        <img src="images/glass boat/images.jpg" alt="Glass Boat 3">
-      </div>
-
-      <h4>Videos</h4>
-      <div class="videos">
-        <video src="videos/18f.mp4" controls width="320"></video>
-        <video src="videos/GOPR2134.MP4" controls width="320"></video>
-      </div>
-
-      <h4>Music</h4>
-      <audio controls>
-        <source src="music/music.m4a" type="audio/mp4">
-        متصفحك لا يدعم تشغيل الصوت.
-      </audio>
-
-      <h3>Snorkeling at Corals</h3>
-      <div class="images">
-        <img src="images/snorkling/R.jpg" alt="Snorkeling 1">
-        <img src="images/snorkling/OIP (1).webp" alt="Snorkeling 2">
-        <img src="images/snorkling/OIP (2).webp" alt="Snorkeling 3">
-      </div>
-      <p>Explore the beautiful Red Sea corals with our local guide.</p>
-      <button onclick="bookNow('Snorkeling at Corals')">Book Now</button>
-    </div>
-
-    <div class="tour">
-      <h3>Orange Bay Island</h3>
-      <div class="images">
-        <img src="images/ornge bay/orane1.jpg" alt="Orange Bay 1">
-        <img src="images/ornge bay/orange (2).jpg" alt="Orange Bay 2">
-        <img src="images/ornge bay/orange (3).jpg" alt="Orange Bay 3">
-        <img src="images/ornge bay/orange (4).jpg" alt="Orange Bay 4">
-      </div>
-      <p>Relax on the sandy beaches of Orange Bay.</p>
-      <button onclick="bookNow('Orange Bay Island')">Book Now</button>
+  <section id="home" class="hero-section">
+    <div class="hero-overlay">
+      <h1>استكشف جمال الغردقة</h1>
+      <p>اكتشف أفضل الجولات مع مرشدك المحلي المحترف. مغامرات بحرية وصحراوية لا تُنسى.</p>
+      <a href="#tours" class="cta-button">اكتشف الجولات الآن</a>
     </div>
   </section>
 
-  <!-- معرض الصور -->
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="images/corals/corals.jpg" alt="Main Image">
-      <img src="images/corals/corals (2).jpg" alt="Sea View">
-      <img src="images/corals/images (3).jpg" alt="Corals">
-    </div>
-  </section>
+  <main>
+    <section id="tours" class="tours-section">
+      <h2 class="section-title">أفضل الجولات</h2>
+      
+      <article class="tour-card">
+        <h3 class="tour-title">جولة القارب الزجاجي</h3>
+        <p class="tour-description">استمتع برؤية الشعاب المرجانية والأسماك الملونة من خلال قاع القارب الزجاجي. رحلة مثالية للعائلة والأطفال.</p>
+        <div class="tour-gallery">
+          <img src="images/glass_boat/1.jpg" alt="القارب الزجاجي في الغردقة" loading="lazy">
+          <img src="images/glass_boat/2.jpg" alt="القارب الزجاجي مع الأسماك" loading="lazy">
+          <img src="images/glass_boat/3.jpg" alt="القارب الزجاجي وقت الغروب" loading="lazy">
+          <img src="images/glass_boat/4.jpg" alt="القاع الزجاجي للقارب" loading="lazy">
+        </div>
+      </article>
 
-  <!-- التواصل -->
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>Fill out the form below to book a tour or get in touch!</p>
+      <article class="tour-card">
+        <h3 class="tour-title">رحلة الغوص والغطس (Snorkeling)</h3>
+        <p class="tour-description">استكشف جمال البحر الأحمر تحت الماء. مرشدنا سيضمن لك تجربة لا تُنسى في أفضل المواقع.</p>
+        <div class="tour-gallery">
+          <img src="images/snorkeling/1.jpg" alt="الغطس فوق الشعاب المرجانية" loading="lazy">
+          <img src="images/snorkeling/2.jpg" alt="رحلة غطس في البحر الأحمر" loading="lazy">
+          <img src="images/snorkeling/3.jpg" alt="معدات الغوص في القارب" loading="lazy">
+          <img src="images/snorkeling/4.jpg" alt="منظر من القارب" loading="lazy">
+        </div>
+      </article>
 
-  <form action="/submit-form" method="post">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="user_name" required>
+      <article class="tour-card">
+        <h3 class="tour-title">جزيرة أورانج باي</h3>
+        <p class="tour-description">استمتع بالاسترخاء على الشواطئ الرملية البيضاء لجزيرة أورانج باي. مكان مثالي لقضاء يوم من الهدوء والاستمتاع بالشمس.</p>
+        <div class="tour-gallery">
+          <img src="images/orange_bay/1.jpg" alt="شاطئ جزيرة أورانج باي" loading="lazy">
+          <img src="images/orange_bay/2.jpg" alt="الاسترخاء على شاطئ أورانج باي" loading="lazy">
+          <img src="images/orange_bay/3.jpg" alt="المظلات على الشاطئ" loading="lazy">
+          <img src="images/orange_bay/4.jpg" alt="منظر بانورامي للجزيرة" loading="lazy">
+        </div>
+      </article>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="user_email" required>
+      <article class="tour-card">
+        <h3 class="tour-title">رحلة سفاري الصحراء</h3>
+        <p class="tour-description">انطلق في مغامرة شيقة عبر الصحراء. استمتع بقيادة سيارات الدفع الرباعي، وتجربة الحياة البدوية الأصيلة.</p>
+        <div class="tour-gallery">
+          <img src="images/safari/1.jpg" alt="قيادة الدراجات الرباعية في الصحراء" loading="lazy">
+          <img src="images/safari/2.jpg" alt="سيارة جيب سفاري" loading="lazy">
+          <img src="images/safari/3.jpg" alt="منظر الغروب في الصحراء" loading="lazy">
+          <img src="images/safari/4.jpg" alt="لقاء مع البدو" loading="lazy">
+        </div>
+      </article>
 
-    <label for="tour">Interested Tour:</label>
-    <select id="tour" name="interested_tour">
-      <option value="glass-boat">Glass Boat</option>
-      <option value="snorkeling">Snorkeling at Corals</option>
-      <option value="orange-bay">Orange Bay Island</option>
-    </select>
+    </section>
 
-    <label for="message">Your Message:</label>
-    <textarea id="message" name="user_message"></textarea>
+    <section id="contact" class="contact-section">
+      <h2 class="section-title">تواصل معنا</h2>
+      <p>للحجز أو الاستفسار عن أي جولة، يمكنك التواصل معنا مباشرةً عبر واتساب. فريقنا في خدمتك 24/7.</p>
+      <a href="https://wa.me/201148577199?text=مرحباً،%20أود%20الاستفسار%20عن%20جولاتكم%20في%20الغردقة." target="_blank" class="whatsapp-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="أيقونة واتساب">
+        إرسال رسالة واتساب
+      </a>
+    </section>
+  </main>
 
-    <button type="submit">Send Inquiry</button>
-  </form>
+  <footer class="main-footer">
+    <p>&copy; 2025 دليلك المحلي في الغردقة. جميع الحقوق محفوظة.</p>
+  </footer>
 
-  <p>📞 <a href="tel:+201148577199">+20 114 857 7199</a></p>
-  <p>📧 <a href="mailto:abdollahagha882@gmail.com">abdollahagha882@gmail.com</a></p>
-</section>
-
-
-
-
-
-  <!-- JavaScript -->
-  <script src="script.js"></script>
 </body>
 </html>
-
-
