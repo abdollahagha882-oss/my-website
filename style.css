@@ -1,172 +1,267 @@
-/* Reset أساسي */
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+/* General Styles */
+:root {
+  --primary-color: #0077c9;
+  --secondary-color: #005f9c;
+  --bg-light: #f9f9f9;
+  --bg-dark: #333;
+  --text-dark: #333;
+  --text-light: #fff;
+  --whatsapp-color: #25D366;
+}
+
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
   line-height: 1.6;
-  background-color: #f4f9ff;
-  color: #333;
 }
 
-/* رأس الصفحة */
-header {
-  background: linear-gradient(135deg, #0077b6, #00b4d8);
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-
-nav ul li a {
-  color: white;
+a {
   text-decoration: none;
+  color: var(--primary-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header and Navigation */
+.main-header {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo a {
+  font-size: 1.5rem;
   font-weight: bold;
-  font-size: 1.1rem;
-  transition: color 0.3s;
+  color: var(--text-light);
 }
 
-nav ul li a:hover {
-  color: #ffd60a;
+.main-nav ul {
+  display: flex;
+  list-style: none;
 }
 
-/* أقسام الرحلات */
-section {
-  padding: 40px 20px;
+.main-nav li {
+  margin-left: 20px;
 }
 
-section h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #0077b6;
-  font-size: 2rem;
-  text-transform: uppercase;
+.main-nav a {
+  color: var(--text-light);
+  font-weight: 700;
+  transition: color 0.3s ease;
 }
 
-/* تصميم الرحلات */
-.tour {
-  background: white;
-  border-radius: 20px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 1000px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: center;
+.main-nav a:hover {
+  color: #c0e1ff;
 }
 
-.tour img {
-  width: 30%;
-  margin: 10px;
-  border-radius: 15px;
-  transition: transform 0.3s;
-}
-
-.tour img:hover {
-  transform: scale(1.05);
-}
-
-.tour h3 {
-  margin: 20px 0 10px;
-  color: #023e8a;
-}
-
-.tour p {
-  margin-bottom: 15px;
-  color: #555;
-}
-
-/* الأزرار */
-button {
-  background: #0077b6;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background 0.3s;
-}
-
-button:hover {
-  background: #0096c7;
-}
-
-/* الجاليري */
-.gallery {
+/* Hero Section */
+.hero-section {
+  position: relative;
+  background: url('images/hero.jpg') no-repeat center center/cover;
+  height: 60vh;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  color: var(--text-light);
+  padding: 20px;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Main Content and Sections */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+/* Tour Cards */
+.tour-card {
+  background-color: var(--text-light);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.tour-title {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+.tour-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.tour-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 15px;
 }
 
-.gallery img {
-  width: 30%;
-  border-radius: 15px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
-  transition: transform 0.3s;
+.tour-gallery img {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.gallery img:hover {
+.tour-gallery img:hover {
   transform: scale(1.05);
+  z-index: 10;
 }
 
-/* التواصل */
-#contact {
+/* Contact Section */
+.contact-section {
   text-align: center;
-  background: #caf0f8;
-  padding: 40px 20px;
-  border-radius: 30px;
-  margin: 20px;
 }
 
-#contact h2 {
-  color: #03045e;
+.contact-section p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
 }
 
-#contact a {
-  color: #0077b6;
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--whatsapp-color);
+  color: var(--text-light);
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-size: 1.2rem;
   font-weight: bold;
-  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-#contact a:hover {
-  text-decoration: underline;
+.whatsapp-button:hover {
+  background-color: #1DA851;
+  transform: translateY(-3px);
 }
 
-/* فيديوهات وصوت */
-video, audio {
-  margin: 15px;
-  border-radius: 15px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+.whatsapp-button img {
+  width: 30px;
+  height: auto;
+  margin-left: 10px;
 }
+
+/* Footer */
+.main-footer {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  /* This CSS will only apply to screens smaller than 768px */
-  header h1 {
-    font-size: 2em;
-  }
-  nav ul li {
-    display: block;
-    margin-bottom: 10px;
-  }
-  .tour .images, .tour .videos {
+  .header-content {
     flex-direction: column;
-    align-items: center;
+    text-align: center;
+  }
+  
+  .main-nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .main-nav li {
+    margin: 5px 0;
+  }
+
+  .hero-section {
+    height: 50vh;
+  }
+  
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .tour-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .tour-description {
+    font-size: 0.95rem;
+  }
+
+  .whatsapp-button {
+    width: 90%;
+    justify-content: center;
   }
 }
